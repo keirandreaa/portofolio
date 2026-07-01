@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>kei.exe — Portfolio</title>
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="y2k-bg scanlines min-h-screen w-full text-[#f6f0df]">
+
+<!-- NAV -->
+<header class="w-full sticky top-0 z-40 px-3 pt-3">
+  <nav class="win w-full max-w-6xl mx-auto bg-[#f6f0df]">
+    <div class="win-bar bg-[#1a2247]">
+      <span class="dot" style="background:#8a5a3b"></span>
+      <span class="dot" style="background:#f6f0df"></span>
+      <span class="dot" style="background:#8a5a3b"></span>
+      <span class="ml-2 truncate" style="color:#f6f0df;font-weight:700;font-size:16px;">★ kei.exe</span>
+    </div>
+    <div class="flex flex-wrap items-center gap-2 sm:gap-4 px-4 py-3 justify-center sm:justify-end">
+      <a href="#about" class="canva-link" style="color:#1a2247;font-weight:700;font-size:14px;">about</a>
+      <a href="#experience" class="canva-link" style="color:#1a2247;font-weight:700;font-size:14px;">experience</a>
+      <a href="#resume" class="canva-link" style="color:#1a2247;font-weight:700;font-size:14px;">resume</a>
+      <a href="#work" class="canva-link" style="color:#1a2247;font-weight:700;font-size:14px;">work</a>
+      <a href="#contact" class="canva-link" style="color:#1a2247;font-weight:700;font-size:14px;">contact</a>
+    </div>
+  </nav>
+</header>
+
+<main class="w-full max-w-6xl mx-auto px-3 pb-16">
+
+  <!-- HERO -->
+  <section class="mt-6 win bg-[#1a2247] overflow-hidden rise" style="animation-delay:.05s">
+    <div class="win-bar bg-[#0e1330]">
+      <span class="dot" style="background:#8a5a3b"></span>
+      <span class="w-2 h-2 rounded-full bg-[#4ade80] blink"></span>
+      <span class="text-xs ml-1" style="color:#f6f0df;font-size:12px;">status: online // welcome to my corner of the web</span>
+    </div>
+    <div class="grid md:grid-cols-[1.4fr_1fr] gap-6 p-6 md:p-8 items-center">
+      <div>
+        <!-- GANTI: nama dan judul hero kamu -->
+        <h1 class="leading-tight" style="color:#f6f0df;font-weight:700;font-size:32px;">hi, i'm Keira Angelica Andrea you can call me kei!.</h1>
+        <!-- GANTI: tagline singkat tentang kamu -->
+        <p class="mt-3" style="color:#d8ceb2;font-size:15px;">Interactive Design &amp; Technology @ Binus University. Blending functionality and aesthetics. Specializing in UI/UX Design, Illustration, and Photography.</p>
+        <div class="mt-5 flex flex-wrap gap-3">
+          <a href="#work" class="retro-btn inline-block px-5 py-2 bg-[#8a5a3b]" style="color:#f6f0df;font-weight:700;font-size:14px;">view my work →</a>
+          <a href="#contact" class="retro-btn inline-block px-5 py-2 bg-[#f6f0df]" style="color:#1a2247;font-weight:700;font-size:14px;">say hi ✉</a>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <button id="starWidget" type="button" class="relative w-40 h-40 grid place-items-center focus:outline-none">
+          <svg class="spin-slow absolute inset-0 w-full h-full" viewBox="0 0 100 100" aria-hidden="true">
+            <circle cx="50" cy="50" r="46" fill="none" stroke="#8a5a3b" stroke-width="2" stroke-dasharray="4 6"></circle>
+            <circle cx="50" cy="4" r="3" fill="#f6f0df"></circle>
+          </svg>
+          <span class="floaty text-5xl select-none">✦</span>
+          <span id="starMood" class="absolute bottom-1 text-xs" style="color:#d8ceb2"></span>
+        </button>
+      </div>
+    </div>
+    <div class="marquee bg-[#8a5a3b] py-1.5 border-t-2 border-[#0e1330]">
+      <span class="text-sm px-4" style="color:#f6f0df;font-size:13px;">★ now booking new projects ★ open to freelance &amp; collabs ★ scroll for the full experience ★</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="mt-8 win bg-[#f6f0df] rise scroll-mt-24" style="animation-delay:.15s">
+    <div class="win-bar bg-[#1a2247]">
+      <span class="dot" style="background:#8a5a3b"></span>
+      <span class="text-xs ml-2" style="color:#f6f0df">about.exe</span>
+    </div>
+    <div class="p-6 md:p-8 grid md:grid-cols-[220px_1fr] gap-6 items-start">
+      <div class="win bg-[#1a2247] p-2 mx-auto">
+        <!-- GANTI: src="" pakai foto kamu. Taruh file foto di folder images/ lalu tulis src="images/foto-kamu.jpg" -->
+        <img loading="lazy" class="w-48 h-48 object-cover rounded-md" src="DSC_1949.JPG" alt="Portrait of a young woman smiling gently in a light shirt against a beige backdrop.">
+      </div>
+      <div>
+        <h2 style="color:#1a2247;font-weight:700;font-size:24px;">About Kei</h2>
+        <!-- GANTI: paragraf bio kamu -->
+        <p class="mt-3 leading-relaxed" style="color:#3a3220;font-size:15px;">I study Interactive Design &amp; Technology at Binus University. Blending functionality and aesthetics, I specialize in UI/UX Design, Illustration, Photography and Editorial Layouts to create engaging visual experiences.</p>
+        <!-- GANTI: daftar skill kamu (tambah/hapus <span> sesuai kebutuhan) -->
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="retro-btn px-3 py-1 text-sm bg-[#8a5a3b]" style="color:#f6f0df;font-size:13px;">UI/UX Design</span>
+          <span class="retro-btn px-3 py-1 text-sm bg-[#1a2247]" style="color:#f6f0df;font-size:13px;">Illustration</span>
+          <span class="retro-btn px-3 py-1 text-sm bg-[#f6f0df]" style="color:#1a2247;font-size:13px;">Branding</span>
+          <span class="retro-btn px-3 py-1 text-sm bg-[#8a5a3b]" style="color:#f6f0df;font-size:13px;">Photography</span>
+          <span class="retro-btn px-3 py-1 text-sm bg-[#1a2247]" style="color:#f6f0df;font-size:13px;">Leadership</span>
+        </div>
+        <button id="vibeBtn" type="button" class="retro-btn mt-5 px-4 py-2 bg-[#1a2247] flex items-center gap-2" style="color:#f6f0df;font-weight:700">
+          <i data-lucide="sparkles" style="width:18px;height:18px"></i>
+          <span style="color:#f6f0df;font-weight:700;font-size:14px;">add a vibe</span>
+          <span id="vibeCount" class="px-2 rounded bg-[#8a5a3b]">0</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="mt-8 win bg-[#1a2247] rise scroll-mt-24" style="animation-delay:.25s">
+    <div class="win-bar bg-[#0e1330]">
+      <span class="dot" style="background:#8a5a3b"></span>
+      <span class="text-xs ml-2" style="color:#f6f0df">experience.log</span>
+    </div>
+    <div class="p-6 md:p-8">
+      <h2 style="color:#f6f0df;font-weight:700;font-size:24px;">experience.log</h2>
+      <!-- GANTI: setiap blok .exp-item di bawah ini = 1 pengalaman. Copy-paste blok untuk nambah pengalaman baru -->
+      <div class="mt-5 space-y-3">
+
+        <!-- Pengalaman 1 -->
+        <div class="exp-item win bg-[#f6f0df] overflow-hidden">
+          <button type="button" class="exp-toggle w-full text-left px-4 py-3 flex items-center justify-between gap-3">
+            <span>
+              <!-- GANTI: nama posisi/peran -->
+              <span class="block" style="color:#1a2247;font-weight:700;font-size:16px;">Student Senior Year Committee (Producer)</span>
+              <!-- GANTI: nama organisasi/sekolah/perusahaan -->
+              <span class="text-sm" style="color:#8a5a3b;font-size:13px;">SMAN 1 Sumedang</span>
+            </span>
+            <span class="flex items-center gap-2 shrink-0">
+              <!-- GANTI: tahun -->
+              <span class="text-xs" style="color:#5e3a24;font-size:12px;">2023</span>
+              <i data-lucide="chevron-down" class="exp-chevron" style="width:20px;height:20px;color:#1a2247"></i>
+            </span>
+          </button>
+          <div class="exp-body px-4">
+            <!-- GANTI: deskripsi pengalaman -->
+            <p class="pb-4 leading-relaxed" style="color:#3a3220;font-size:14px;">I helmed our senior theatre capstone by managing the end-to-end production while crafting an original script. My work focused on bridging creative narrative with logistical execution, ensuring the play's thematic depth resonated with our graduating class.</p>
+          </div>
+        </div>
+
+        <!-- Pengalaman 2 -->
+        <div class="exp-item win bg-[#f6f0df] overflow-hidden">
+          <button type="button" class="exp-toggle w-full text-left px-4 py-3 flex items-center justify-between gap-3">
+            <span>
+              <span class="block" style="color:#1a2247;font-weight:700;font-size:16px;">Freshman Leader, NEXT 2025</span>
+              <span class="text-sm" style="color:#8a5a3b;font-size:13px;">Binus University</span>
+            </span>
+            <span class="flex items-center gap-2 shrink-0">
+              <span class="text-xs" style="color:#5e3a24;font-size:12px;">2025</span>
+              <i data-lucide="chevron-down" class="exp-chevron" style="width:20px;height:20px;color:#1a2247"></i>
+            </span>
+          </button>
+          <div class="exp-body px-4">
+            <p class="pb-4 leading-relaxed" style="color:#3a3220;font-size:14px;">As a 2025 NEXT Freshmen Leader, I provided direct mentorship and guidance to help incoming students navigate their transition into Binus University.</p>
+          </div>
+        </div>
+
+        <!-- Pengalaman 3 -->
+        <div class="exp-item win bg-[#f6f0df] overflow-hidden">
+          <button type="button" class="exp-toggle w-full text-left px-4 py-3 flex items-center justify-between gap-3">
+            <span>
+              <span class="block" style="color:#1a2247;font-weight:700;font-size:16px;">WeFest Committee</span>
+              <span class="text-sm" style="color:#8a5a3b;font-size:13px;">Binus University</span>
+            </span>
+            <span class="flex items-center gap-2 shrink-0">
+              <span class="text-xs" style="color:#5e3a24;font-size:12px;">2025</span>
+              <i data-lucide="chevron-down" class="exp-chevron" style="width:20px;height:20px;color:#1a2247"></i>
+            </span>
+          </button>
+          <div class="exp-body px-4">
+            <p class="pb-4 leading-relaxed" style="color:#3a3220;font-size:14px;">As a 2025 WeFest Committee member, I collaborated on the planning and operational execution of large-scale campus events at Binus University.</p>
+          </div>
+        </div>
+
+        <!-- Untuk nambah pengalaman baru, copy salah satu blok <div class="exp-item ..."> di atas lalu tempel di sini -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section id="resume" class="mt-8 win bg-[#f6f0df] rise scroll-mt-24" style="animation-delay:.3s">
+    <div class="win-bar bg-[#1a2247]">
+      <span class="dot" style="background:#8a5a3b"></span>
+      <span class="text-xs ml-2" style="color:#f6f0df">resume.pdf</span>
+    </div>
+    <div class="p-6 md:p-8">
+      <div class="grid md:grid-cols-[1.2fr_1fr] gap-6 items-center">
+        <div>
+          <h2 style="color:#1a2247;font-weight:700;font-size:24px;">curriculum vitae</h2>
+          <!-- GANTI: teks pengantar resume -->
+          <p class="mt-3 leading-relaxed" style="color:#3a3220;font-size:15px;">Want to see my full professional timeline and academic history? Grab a copy of my neat, single-page resume or open the digital version directly.</p>
+          <div class="mt-6">
+            <!-- GANTI: href="" pakai link PDF resume kamu. Taruh file di folder files/ lalu tulis href="files/resume-kamu.pdf" -->
+            <a href="CV_KEIRA_2026.pdf" target="_blank" rel="noopener noreferrer" class="retro-btn inline-flex items-center gap-2 px-6 py-3 bg-[#8a5a3b]" style="color:#f6f0df;font-weight:700;font-size:15px;">Download Resume</a>
+          </div>
+        </div>
+        <!-- Preview kartu CV mini -->
+        <div class="win bg-[#1a2247] p-4 text-xs font-mono text-[#f6f0df] shadow-inner relative overflow-hidden" style="min-height:200px;">
+          <div class="absolute right-2 top-2 text-[#8a5a3b] text-4xl select-none opacity-30">📄</div>
+          <div class="border-b border-[#8a5a3b] pb-2 mb-2">
+            <!-- GANTI: nama kamu -->
+            <p class="font-bold text-[#f6f0df] text-sm">KEIRA ANGELICA ANDREA</p>
+            <!-- GANTI: jurusan/prodi -->
+            <p class="text-[#8a5a3b]">Interactive Design &amp; Technology</p>
+          </div>
+          <div class="space-y-2">
+            <div>
+              <p class="font-bold text-[#8a5a3b]">[ EDUCATION ]</p>
+              <!-- GANTI: pendidikan -->
+              <p>· Binus University (Interactive Design)</p>
+            </div>
+            <div>
+              <p class="font-bold text-[#8a5a3b]">[ SKILLS ]</p>
+              <!-- GANTI: ringkasan skill -->
+              <p>· UI/UX, Illustration, Editorial Layouts</p>
+            </div>
+            <div>
+              <p class="font-bold text-[#8a5a3b]">[ EXPERIENCE ]</p>
+              <!-- GANTI: ringkasan pengalaman utama -->
+              <p>· Senior Capstone Producer, WeFest Comm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- WORK -->
+  <section id="work" class="mt-8 win bg-[#f6f0df] rise scroll-mt-24" style="animation-delay:.35s">
+    <div class="win-bar bg-[#1a2247]">
+      <span class="dot" style="background:#8a5a3b"></span>
+      <span class="text-xs ml-2" style="color:#f6f0df">work.gallery</span>
+    </div>
+    <div class="p-6 md:p-8">
+      <h2 style="color:#1a2247;font-weight:700;font-size:24px;">selected work</h2>
+      <!-- GANTI: setiap <article class="work-card"> = 1 project. Copy-paste blok untuk nambah project baru -->
+      <div class="mt-5 grid sm:grid-cols-2 gap-5">
+
+        <!-- Project 1 -->
+        <article tabindex="0" class="work-card win bg-[#1a2247] overflow-hidden relative focus:outline-none">
+          <!-- GANTI: src="" pakai gambar project kamu. Taruh file di folder images/ lalu tulis src="images/nama-file.jpg" -->
+          <img src="CoastalRythmBanner.png" alt="Banner Event" class="work-image">
+          <div class="p-4">
+            <!-- GANTI: judul project -->
+            <h3 style="color:#f6f0df;font-weight:700;font-size:18px;">Coastal Rhythm Event Banner</h3>
+          </div>
+          <div class="work-overlay absolute inset-0 bg-[#0e1330]/92 p-5 flex flex-col justify-center">
+            <!-- GANTI: deskripsi project (muncul pas di-hover) -->
+            <p class="leading-relaxed" style="color:#202940;font-size:14px;">Roll-up banner serves as a final project for a computer graphics course, designed in Photoshop to showcase a deep teal background with sparkling lights, golden typography, and a dynamic arrangement of musical instruments.</p>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article tabindex="0" class="work-card win bg-[#1a2247] overflow-hidden relative focus:outline-none">
+          <img src="PhinisiMockup.png" alt="Banner Event" class="work-image">
+          <div class="p-4">
+            <h3 style="color:#f6f0df;font-weight:700;font-size:18px;">User Interface Design</h3>
+          </div>
+          <div class="work-overlay absolute inset-0 bg-[#0e1330]/92 p-5 flex flex-col justify-center">
+            <p class="leading-relaxed" style="color:#9A8678;font-size:14px;">Sleek mobile user interface design serves as a final project for a computer graphics course, designed in Figma to showcase a luxury boat charter application named "OATHSEA" featuring a collaboration with a colleague alongside clean typography, realistic mockups, and elegant ocean-themed visuals.</p>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article tabindex="0" class="work-card win bg-[#1a2247] overflow-hidden relative focus:outline-none">
+          <img loading="lazy" class="w-full h-52 object-cover" src="photography.jpeg" alt="Close-up of a laptop screen showing a photo editing interface.">
+          <div class="p-4">
+            <h3 style="color:#f6f0df;font-weight:700;font-size:18px;">Mencari. Photography project</h3>
+          </div>
+          <div class="work-overlay absolute inset-0 bg-[#0e1330]/92 p-5 flex flex-col justify-center">
+            <p class="leading-relaxed" style="color:#f6f0df;font-size:14px;">Cinematic black-and-white photograph, titled "MENCARI," serves as a featured piece for a photography project, captured on a Nikon Z30 to depict a lone figure carrying a fishing net along a grassy riverbank.</p>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article tabindex="0" class="work-card win bg-[#1a2247] overflow-hidden relative focus:outline-none rounded-lg">
+          <img loading="lazy" class="w-full h-52 object-cover object-center" src="MockUpCitarasa.png" alt="A vibrant outdoor bulletin board featuring various artistic posters.">
+  
+          <div class="p-4">
+            <h3 style="color:#f6f0df;font-weight:700;font-size:18px;">Tahu Citarasa Logo</h3>
+          </div>
+  
+          <div class="work-overlay absolute inset-0 bg-[#0e1330]/92 p-5 flex flex-col justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+            <p class="leading-relaxed" style="color:#f6f0df;font-size:14px;">Creative branding design serves as a recent logo project for the brand "TAHU CITARASA," developed using Illustrator and Photoshop to present an intricate, woven monogram emblem on a realistic outdoor circular signage mockup.</p>
+          </div>
+        </article>
+
+        <!-- Untuk nambah project baru, copy salah satu blok <article class="work-card ..."> di atas lalu tempel di sini -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="mt-8 win bg-[#1a2247] rise scroll-mt-24" style="animation-delay:.45s">
+    <div class="win-bar bg-[#0e1330]">
+      <span class="dot" style="background:#8a5a3b"></span>
+      <span class="text-xs ml-2" style="color:#f6f0df">find-me.html</span>
+    </div>
+    <div class="p-6 md:p-8">
+      <h2 style="color:#f6f0df;font-weight:700;font-size:24px;">where to find me</h2>
+      <!-- GANTI: teks pengantar contact -->
+      <p class="mt-2" style="color:#d8ceb2;font-size:15px;">let's make something fun together. slide into whichever inbox suits you best ↓</p>
+      <div class="mt-5 grid sm:grid-cols-2 gap-4">
+        <!-- GANTI: nomor WA, format 62xxxxxxxxxx tanpa "+" atau "0" di depan -->
+        <a href="https://wa.me/6288218416802" target="_blank" rel="noopener noreferrer" class="retro-btn px-4 py-4 bg-[#f6f0df] flex items-center gap-3" style="color:#1a2247;font-weight:700;font-size:15px;">WhatsApp</a>
+        <!-- GANTI: link username Instagram kamu -->
+        <a href="https://instagram.com/keirandreaa" target="_blank" rel="noopener noreferrer" class="retro-btn px-4 py-4 bg-[#8a5a3b] flex items-center gap-3" style="color:#f6f0df;font-weight:700;font-size:15px;">Instagram</a>
+        <!-- GANTI: link profil LinkedIn kamu -->
+        <a href="https://www.linkedin.com/in/keira-angelica-andrea-79b80632b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer" class="retro-btn px-4 py-4 bg-[#f6f0df] flex items-center gap-3" style="color:#1a2247;font-weight:700;font-size:15px;">LinkedIn</a>
+        <!-- GANTI: alamat email kamu -->
+        <a href="mailto:keirandreaa@gmail.com" class="retro-btn px-4 py-4 bg-[#8a5a3b] flex items-center gap-3" style="color:#f6f0df;font-weight:700;font-size:15px;">Email</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GANTI: nama kamu di footer -->
+  <footer class="mt-8 text-center">
+    <p class="text-xs" style="color:#d8ceb2;font-size:12px;">© 2026 Keira Angelica Andrea · best viewed in 800×600 · made with ♡</p>
+  </footer>
+
+</main>
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+
+</body>
+</html>
